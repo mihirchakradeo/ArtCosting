@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+    tools:context="com.example.mihir.artcosting.MainActivity"><![CDATA[
+
+        android:layout_marginEnd="18dp" />
+
+    ]]>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="9dp"
+        android:text="Artist's material cost"
+
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/amcEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Artist's labour cost"
+
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/amcEt"
+        android:layout_alignStart="@+id/amcEt" />
+
+    <EditText
+        android:id="@+id/alcEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/alcEt"
+        android:layout_below="@+id/alcEt"
+
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
+        android:text="Gallery Commission Percentage"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/gpEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/alcEt" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Material.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/gpEt"
+        android:layout_below="@+id/gpEt"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/background_light"
+        android:padding="10px"
+        android:text="Calculate Price" />
+
+    <Button
+        android:id="@+id/buttonclr"
+        style="@android:style/Widget.Material.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginBottom="48dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10px"
+        android:text="Clear all"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textViewFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="65dp"
+        android:text="RETAIL PRICE: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
